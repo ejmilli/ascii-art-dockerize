@@ -6,10 +6,10 @@ COPY . .
 
 RUN go build -o ascii-web . 
 
+LABEL maintainer="milli@ascii-web.com"
+LABEL version="1.0"
+LABEL description="Ascii Art Web Server"
+
 EXPOSE 8080
 
 CMD ["./ascii-web"]
-
-LABEL milli@ascci-web.com
-LABEL version="1.0"
-LABEL description="Ascii Art Web Server"
